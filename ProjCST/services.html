@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Hair Stylist Business</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Available Services</h2>
+            <ul>
+                <li>Knotless
+                    <ul>
+                        <li>Large Knotless - $125</li>
+                        <li>Medium Knotless - $165</li>
+                        <li>Small Knotless - $200</li>
+                    </ul>
+                </li>
+                <li>Feed-Ins
+                    <ul>
+                        <li>Six Stitch Braids - $85</li>
+                        <li>Twelve Stitch Braids - $125</li>
+                        <li>Eight Stitch Braids - $95</li>
+                        <li>Fulani Braids - $195</li>
+                        <li>Twenty Stitch Braids - $145</li>
+                    </ul>
+                </li>
+                <li>Island Twist
+                    <ul>
+                        <li>Jumbo Island Twist - $115</li>
+                        <li>Large Island Twist - $125</li>
+                        <li>Medium Island Twist - $180</li>
+                        <li>Small Island Twist - $215</li>
+                    </ul>
+                </li>
+                <li>Natural Hair
+                    <ul>
+                        <li>Kid Styles - $35</li>
+                        <li>Cornrows - $35</li>
+                        <li>Two Strand Twist - $45</li>
+                    </ul>
+                </li>
+                <li>Hair Coloring - $80</li>
+            </ul>
+        </section>
+        <section>
+         <h3>Book Your Appointment</h3>
+            <form action="submit_booking.php" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="service">Choose Service:</label>
+    <select id="service" name="service" required>
+        <option value="large-knotless">Large Knotless - $125</option>
+        <option value="medium-knotless">Medium Knotless - $165</option>
+        <option value="small-knotless">Small Knotless - $200</option>
+        <option value="six-stitch">Six Stitch Braids - $85</option>
+        <option value="twelve-stitch">Twelve Stitch Braids - $125</option>
+        <option value="eight-stitch">Eight Stitch Braids - $95</option>
+        <option value="fulani">Fulani Braids - $195</option>
+        <option value="twenty-stitch">Twenty Stitch Braids - $145</option>
+        <option value="jumbo-island-twist">Jumbo Island Twist - $115</option>
+        <option value="large-island-twist">Large Island Twist - $125</option>
+        <option value="medium-island-twist">Medium Island Twist - $180</option>
+        <option value="small-island-twist">Small Island Twist - $215</option>
+        <option value="kid-styles">Kid Styles - $35</option>
+        <option value="cornrows">Cornrows - $35</option>
+        <option value="two-strand-twist">Two Strand Twist - $45</option>
+        <option value="hair-coloring">Hair Coloring - $80</option>
+        <option value="braids">Braids - $100</option>
+        <option value="wash-style">Wash & Style - $40</option>
+    </select><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required
+           min="2024-10-01" max="2024-10-31"><br><br>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Styled by Nai</p>
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> <br>
+    </footer>
+</body>
+</html>
